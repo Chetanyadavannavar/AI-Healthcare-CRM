@@ -1,0 +1,196 @@
+/* ======================================================
+   HISTORY PAGE
+====================================================== */
+
+.history-page {
+    padding: 40px 0 60px;
+}
+
+/* ======================================================
+   HEADER
+====================================================== */
+
+.history-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.history-header h1 {
+    color: white;
+    font-size: 42px;
+    font-weight: 700;
+    margin-bottom: 6px;
+}
+
+.history-header p {
+    color: #94a3b8;
+    margin: 0;
+}
+
+/* ======================================================
+   SEARCH
+====================================================== */
+
+.history-search {
+    position: relative;
+    margin-bottom: 35px;
+}
+
+.history-search i {
+    position: absolute;
+    left: 18px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #94a3b8;
+    z-index: 2;
+}
+
+.history-search input {
+    height: 58px;
+    padding-left: 48px !important;
+    border-radius: 16px !important;
+}
+
+/* ======================================================
+   GRID
+====================================================== */
+
+.history-grid {
+    display: grid;
+    gap: 24px;
+}
+
+/* ======================================================
+   CARD
+====================================================== */
+
+.history-card {
+    padding: 28px;
+    transition: .35s;
+}
+
+.history-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 18px 40px rgba(37, 99, 235, .18);
+}
+
+/* ======================================================
+   TOP
+====================================================== */
+
+.history-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.history-top h3 {
+    color: white;
+    margin-bottom: 6px;
+    font-size: 22px;
+}
+
+.history-top small {
+    color: #94a3b8;
+}
+
+/* ======================================================
+   BADGE
+====================================================== */
+
+.history-badge {
+    padding: 10px 18px;
+    border-radius: 30px;
+    font-size: 14px;
+    font-weight: 600;
+    color: white;
+    display: inline-flex;
+    align-items: center;
+}
+
+.history-badge.positive {
+    background: #22c55e;
+}
+
+.history-badge.neutral {
+    background: #f59e0b;
+}
+
+.history-badge.negative {
+    background: #ef4444;
+}
+
+/* ======================================================
+   SECTION
+====================================================== */
+
+.history-section {
+    margin-top: 22px;
+}
+
+.history-section h5 {
+    color: white;
+    margin-bottom: 10px;
+    font-size: 17px;
+}
+
+.history-section p {
+    color: #cbd5e1;
+    line-height: 1.8;
+    margin: 0;
+}
+
+/* ======================================================
+   EMPTY
+====================================================== */
+
+.empty-history {
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.empty-history i {
+    font-size: 80px;
+    color: #3b82f6;
+    margin-bottom: 20px;
+}
+
+.empty-history h2 {
+    color: white;
+    margin-bottom: 10px;
+}
+
+.empty-history p {
+    color: #94a3b8;
+}
+
+/* ======================================================
+   RESPONSIVE
+====================================================== */
+
+@media (max-width:768px) {
+
+    .history-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+    }
+
+    .history-top {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+
+    .history-card {
+        padding: 22px;
+    }
+
+    .history-header h1 {
+        font-size: 34px;
+    }
+
+}

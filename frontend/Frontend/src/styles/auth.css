@@ -1,0 +1,146 @@
+/* ======================================================
+   AUTH PAGE
+====================================================== */
+
+.auth-page {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #08192f, #0d2342);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px;
+}
+
+.auth-card {
+    width: 100%;
+    max-width: 460px;
+    padding: 40px;
+    border-radius: 24px;
+    background: rgba(255, 255, 255, .05);
+    backdrop-filter: blur(18px);
+    border: 1px solid rgba(255, 255, 255, .08);
+    box-shadow: 0 20px 45px rgba(0, 0, 0, .30);
+}
+
+.auth-logo {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.auth-logo i {
+    font-size: 70px;
+    color: #3b82f6;
+}
+
+.auth-logo h1 {
+    color: white;
+    font-size: 32px;
+    font-weight: 700;
+    margin-top: 12px;
+}
+
+.auth-logo p {
+    color: #94a3b8;
+    margin-top: 8px;
+}
+
+.auth-form {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.auth-form label {
+    color: #dbe4f3;
+    font-weight: 500;
+    margin-bottom: 6px;
+}
+
+.auth-form .form-control {
+    height: 52px;
+    border-radius: 14px;
+}
+
+.auth-btn {
+    margin-top: 10px;
+    height: 54px;
+    border-radius: 14px;
+    font-size: 17px;
+    font-weight: 600;
+    background: linear-gradient(135deg, #2563eb, #7c3aed);
+    border: none;
+    transition: .3s;
+}
+
+.auth-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 12px 30px rgba(37, 99, 235, .30);
+}
+
+.auth-footer {
+    margin-top: 25px;
+    text-align: center;
+    color: #94a3b8;
+}
+
+.auth-footer a {
+    color: #60a5fa;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.auth-footer a:hover {
+    color: white;
+}
+
+.auth-divider {
+    display: flex;
+    align-items: center;
+    margin: 25px 0;
+    color: #94a3b8;
+}
+
+.auth-divider::before,
+.auth-divider::after {
+    content: "";
+    flex: 1;
+    height: 1px;
+    background: rgba(255, 255, 255, .08);
+}
+
+.auth-divider span {
+    margin: 0 15px;
+}
+
+.auth-remember {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #cbd5e1;
+    font-size: 14px;
+}
+
+.auth-remember input {
+    margin-right: 8px;
+}
+
+.auth-remember a {
+    color: #60a5fa;
+    text-decoration: none;
+}
+
+.auth-remember a:hover {
+    color: white;
+}
+
+@media(max-width:768px) {
+
+    .auth-card {
+        padding: 30px 24px;
+    }
+
+    .auth-logo h1 {
+        font-size: 28px;
+    }
+
+}

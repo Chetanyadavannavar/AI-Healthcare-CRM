@@ -1,0 +1,434 @@
+/* ======================================================
+   INTERACTION LAYOUT
+====================================================== */
+
+.interaction-layout {
+    display: grid;
+    grid-template-columns: 1.3fr .9fr;
+    gap: 30px;
+    margin-top: 40px;
+    margin-bottom: 50px;
+    align-items: stretch;
+}
+
+.interaction-panel {
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+/* ======================================================
+   HEADER
+====================================================== */
+
+.interaction-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.interaction-header h2 {
+    color: #fff;
+    font-size: 30px;
+    font-weight: 700;
+    margin: 0;
+}
+
+.interaction-header p {
+    color: #94a3b8;
+    margin-top: 8px;
+}
+
+.online-badge {
+    background: #16a34a;
+    color: #fff;
+    padding: 8px 18px;
+    border-radius: 30px;
+    font-size: 13px;
+    font-weight: 600;
+    box-shadow: 0 5px 20px rgba(34, 197, 94, .25);
+}
+
+/* ======================================================
+   SEARCH
+====================================================== */
+
+.doctor-search {
+    position: relative;
+    margin: 25px 0;
+}
+
+.doctor-search i {
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #94a3b8;
+    z-index: 2;
+}
+
+.doctor-search input {
+    padding-left: 45px !important;
+}
+
+/* ======================================================
+   DOCTOR LIST
+====================================================== */
+
+.doctor-list {
+    max-height: 340px;
+    overflow-y: auto;
+    padding-right: 5px;
+}
+
+.doctor-list::-webkit-scrollbar {
+    width: 6px;
+}
+
+.doctor-list::-webkit-scrollbar-thumb {
+    background: #2563eb;
+    border-radius: 20px;
+}
+
+.doctor-item {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 18px;
+    margin-bottom: 14px;
+    border-radius: 18px;
+    background: rgba(255, 255, 255, .04);
+    border: 1px solid rgba(255, 255, 255, .05);
+    cursor: pointer;
+    transition: .35s;
+}
+
+.doctor-item:hover {
+    transform: translateY(-4px);
+    border-color: #2563eb;
+    background: rgba(37, 99, 235, .10);
+}
+
+.doctor-active {
+    background: rgba(37, 99, 235, .18);
+    border-color: #3b82f6;
+}
+
+.doctor-avatar {
+    font-size: 48px;
+    color: #60a5fa;
+}
+
+.doctor-info {
+    flex: 1;
+}
+
+.doctor-info h6 {
+    margin: 0;
+    color: #fff;
+    font-size: 17px;
+}
+
+.doctor-info span {
+    display: block;
+    color: #cbd5e1;
+    margin-top: 3px;
+}
+
+.doctor-info small {
+    color: #94a3b8;
+}
+
+.selected-icon {
+    color: #22c55e;
+    font-size: 22px;
+}
+
+.empty-doctor {
+    padding: 50px;
+    text-align: center;
+    color: #94a3b8;
+}
+
+.empty-doctor i {
+    font-size: 60px;
+    margin-bottom: 15px;
+}
+
+/* ======================================================
+   TEXTAREA
+====================================================== */
+
+.interaction-textarea {
+    margin-top: 22px;
+    height: 320px;
+    min-height: 320px;
+    resize: none;
+}
+
+.interaction-textarea::placeholder {
+    color: #94a3b8;
+}
+
+/* ======================================================
+   BUTTON
+====================================================== */
+
+.action-buttons {
+    margin-top: 25px;
+}
+
+.action-buttons .btn {
+    width: 100%;
+    height: 56px;
+    border-radius: 14px;
+    font-size: 17px;
+    font-weight: 600;
+}
+
+/* ======================================================
+   AI EMPTY
+====================================================== */
+
+.ai-empty,
+.ai-loading {
+    min-height: 700px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.ai-empty i {
+    font-size: 80px;
+    color: #3b82f6;
+    margin-bottom: 20px;
+}
+
+.ai-empty h2,
+.ai-loading h3 {
+    color: #fff;
+    margin-top: 20px;
+}
+
+.ai-empty p,
+.ai-loading p {
+    color: #94a3b8;
+    margin-bottom: 30px;
+}
+
+.feature-list {
+    width: 100%;
+}
+
+.feature-list div {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    padding: 18px;
+    margin-bottom: 16px;
+    border-radius: 16px;
+    background: rgba(255, 255, 255, .05);
+    transition: .3s;
+}
+
+.feature-list div:hover {
+    background: rgba(37, 99, 235, .10);
+}
+
+.feature-list i {
+    font-size: 28px;
+    color: #3b82f6;
+}
+
+.feature-list span {
+    color: #dbe4f3;
+    font-size: 17px;
+}
+
+/* ======================================================
+   RESULT
+====================================================== */
+
+.result-title {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    color: #fff;
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 25px;
+}
+
+.result-card {
+    background: rgba(255, 255, 255, .05);
+    border: 1px solid rgba(255, 255, 255, .06);
+    border-radius: 18px;
+    padding: 22px;
+    margin-bottom: 18px;
+    transition: .3s;
+}
+
+.result-card:hover {
+    border-color: #2563eb;
+}
+
+.result-card h5 {
+    color: #fff;
+    margin-bottom: 12px;
+}
+
+.result-card p {
+    color: #cbd5e1;
+    line-height: 1.7;
+    margin: 0;
+}
+
+/* ======================================================
+   SENTIMENT
+====================================================== */
+
+.sentiment-badge {
+    display: inline-flex;
+    align-items: center;
+    padding: 10px 20px;
+    border-radius: 30px;
+    color: #fff;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+
+.sentiment-badge.positive {
+    background: #22c55e;
+}
+
+.sentiment-badge.neutral {
+    background: #f59e0b;
+}
+
+.sentiment-badge.negative {
+    background: #ef4444;
+}
+
+/* ======================================================
+   RESPONSIVE
+====================================================== */
+
+@media(max-width:992px) {
+
+    .interaction-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .interaction-panel {
+        padding: 24px;
+    }
+
+    .interaction-textarea {
+        height: 250px;
+        min-height: 250px;
+    }
+
+}
+
+
+/* Empty doctor list */
+
+.empty-doctor {
+
+    text-align: center;
+    padding: 60px 20px;
+    color: #94a3b8;
+
+}
+
+.empty-doctor i {
+
+    font-size: 60px;
+    color: #3b82f6;
+    margin-bottom: 15px;
+
+}
+
+.empty-doctor h5 {
+
+    color: white;
+    margin-bottom: 8px;
+
+}
+
+/* Selected animation */
+
+.doctor-active {
+
+    animation: selectedCard .25s ease;
+
+}
+
+@keyframes selectedCard {
+
+    from {
+
+        transform: scale(.98);
+
+    }
+
+    to {
+
+        transform: scale(1);
+
+    }
+
+}
+
+/* Hospital */
+
+.doctor-info small {
+
+    display: block;
+    margin-top: 6px;
+    color: #94a3b8;
+
+}
+
+/* Avatar */
+
+.doctor-avatar {
+
+    font-size: 52px;
+    color: #60a5fa;
+
+}
+
+.ai-icon {
+    font-size: 85px;
+    color: #3b82f6;
+    margin-bottom: 20px;
+}
+
+.feature-list strong {
+    display: block;
+    color: white;
+    font-size: 16px;
+}
+
+.feature-list small {
+    color: #94a3b8;
+    font-size: 13px;
+}
+
+.feature-list div {
+    align-items: flex-start;
+}
+
+.result-card {
+    transition: .35s;
+}
+
+.result-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 30px rgba(37, 99, 235, .15);
+}
